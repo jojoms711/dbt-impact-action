@@ -34,6 +34,11 @@ inputs:
     required: false
     default: 30
 
+outputs:
+  IMPACT_ANALYSIS_MD:
+    description: "Impact analysis markdown output"
+    value: ${{ steps.impact-analysis.outputs.IMPACT_ANALYSIS_MD }}
+
 runs:
   using: "composite"
   steps:
